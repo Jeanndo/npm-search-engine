@@ -1,0 +1,14 @@
+import { ActionType } from "../action-types";
+
+export interface SearchRepositoriesAction {
+  type: ActionType.SEACH_REPOSITORIES;
+}
+export interface SearchRepositoriesSuccessAction {
+  type: ActionType.SEACH_REPOSITORIES_SUCCESS;
+  payload: string[];
+}
+
+export interface SearchRepositoriesErrorAction {
+  type: ActionType.SEARCH_REPOSITORIES_ERROR;
+  payload: string;
+}
